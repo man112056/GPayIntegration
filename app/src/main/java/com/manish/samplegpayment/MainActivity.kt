@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         val gPayIntent = Intent(Intent.ACTION_VIEW).apply {
             data = Uri.parse("upi://pay").buildUpon()
-                .appendQueryParameter("pa", "Ps1.s2k@finobank")
+                .appendQueryParameter("pa", "")// add your upi id here
                 .appendQueryParameter("pn", "Aman")
                 .appendQueryParameter("am", "1")
                 .appendQueryParameter("cu", "INR")
